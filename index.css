@@ -1,0 +1,385 @@
+/* CSS 初始化 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f3f5f7;
+  font: 16px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+}
+
+/* 清浮动 */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+/*    ------------------网页样式------------------------     */
+/* 版心 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* ------------------------头部样式------------------------ */
+.header {
+  height: 42px;
+  margin: 30px auto;
+  /* background-color   : pink; */
+}
+
+.logo {
+  float: left;
+  width: 195px;
+  height: 42px;
+}
+
+.nav {
+  float: left;
+  margin-left: 70px;
+  height: 42px;
+  line-height: 42px;
+}
+
+.nav li {
+  float: left;
+  margin-right: 30px;
+  /* border          : 1px solid green; */
+  /* background-color: green; */
+}
+
+.nav li a {
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 18px;
+  color: #050505;
+  /* background-color:blanchedalmond; */
+}
+
+.nav li a:hover {
+  color: #00a4ff;
+  border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+  float: left;
+  width: 412px;
+  height: 40px;
+  margin-left: 40px;
+  /* background-color: purple; */
+}
+
+.search input {
+  float: left;
+  width: 320px;
+  height: 40px;
+  border: 1px solid #00a4ff;
+  border-right: 0;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #bfbfbf;
+  /* 去除 获得光标之后的外边框*/
+  outline: none;
+}
+
+/* 伪元素 */
+.search input::placeholder {
+  font-size: 14px;
+}
+
+.search button {
+  float: left;
+  width: 51px;
+  height: 42px;
+  border: none;
+  background: url(./images/fa-search.png);
+}
+
+.header .user {
+  float: left;
+  height: 42px;
+  line-height: 42px;
+}
+
+.header .user img {
+  /* float: left; */
+  margin-left: 28px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+/* 控制文字和图片的对齐方式 */
+/* 头部结尾的头像后面 */
+.header .user span {
+  /* float: left; */
+  font-size: 14px;
+  /* height: 42px;
+  line-height: 42px; */
+  color: #666666;
+  padding: 0 10px;
+  /* line-height: 40; */
+}
+
+/* -------------------------banner------------------------- */
+.banner {
+  height: 420px;
+  background-color: #1c036c;
+}
+
+.banner .subnav {
+  /* margin: 0 20px; */
+  float: left;
+  padding: 20px 20px;
+  width: 150px;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.banner .subnav li a {
+
+  /* float: left; */
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.banner .subnav li a span {
+  float: right;
+  /* color: #fff; */
+}
+
+/* .banner .subnav .active:active {
+  
+  color: #0a62a2;
+} */
+/* 交集选择器 */
+.banner .subnav li a.active {
+  color: #0a62a2;
+}
+
+
+
+/* 课程表 */
+.course {
+  float: right;
+  width: 228px;
+  height: 300px;
+  margin-top: 50px;
+  background-color: #fff;
+}
+
+.course h2 {
+  /* width           : 231px; */
+  height: 48px;
+  line-height: 48px;
+  background-color: #9bceea;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.course .list {
+  margin: 0 18px;
+}
+
+.course .list li {
+  margin-top: 10px;
+  height: 50px;
+  /* line-height: 60px; */
+  border-bottom: 1px solid #eaeaea;
+}
+
+.course .list li h3 {
+  font-size: 16px;
+  color: #4e4e4e;
+}
+
+.course .list li span {
+  font-size: 14px;
+}
+
+.course .list li p {
+  font-size: 12px;
+
+}
+
+.course .btn {
+  display: inline-block;
+  margin: 0 14px;
+  height: 39px;
+  width: 200px;
+  line-height: 39px;
+  border: 1px solid #00a4ff;
+  text-align: center;
+  color: #00a4ff;
+}
+
+/* ----------------------精品推荐--------------------------- */
+.recommand {
+  margin-top: 8px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f3f5f7;
+  /* 阴影 */
+  box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, .3);
+}
+
+.recommand h2 {
+  float: left;
+  margin: 0 26px 0 34px;
+  font-size: 16px;
+  color: #00a4ff;
+}
+
+.recommand ul {
+  float: left;
+}
+
+.recommand ul li {
+  float: left;
+}
+
+.recommand ul li a {
+  padding: 0 35px;
+  border-left: 1px solid #bfbfbf;
+  font-size: 16px;
+  color: #050505;
+}
+
+.recommand .edit {
+  float: right;
+  margin-right: 30px;
+  font-size: 14px;
+  color: #00a4ff;
+}
+
+/* 详细--------------------------------------- */
+.recommand-box {
+  margin-top: 36px;
+  /* background-color: gray; */
+}
+
+.recommand-box .hd h2 {
+  float: left;
+  font-weight: normal;
+  font-size: 20px;
+  color: #494949;
+}
+
+.recommand-box .hd a {
+  float: right;
+  /* you----------------------------------------------- */
+  margin-right: 30px;
+  color: #a5a5a5;
+  font-size: 12px;
+}
+
+.recommand-box .bd {
+  margin-top: 20px;
+
+}
+
+/* 228*270 h3 margin: 0  */
+.recommand-box .bd .wrap {
+  /* height: 500px; */
+  width: 1215px;
+}
+
+.recommand-box .bd .wrap .box {
+  float: left;
+  width: 228px;
+  height: 270px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(118, 118, 118, 0.5);
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.recommand-box .bd .wrap .box img {
+  width: 100%;
+  height: 156px;
+
+}
+
+.recommand-box .bd .wrap .box .inner {
+  margin: 15px 20px 0 24px;
+}
+
+.recommand-box .bd .wrap .box .inner h3 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #050505;
+
+}
+.recommand-box .bd .wrap .box .inner p {
+  font-size: 12px;
+  color: #999999;
+  margin-top: 18px;
+}
+
+.recommand-box .bd .wrap .box .inner p span {
+  font-size: 12px;
+  color: #ff7c2d;
+}
+.footer {
+  height: 417px;
+  margin-top: 40px;
+  background-color: #fff;
+}
+.copyright {
+  float: left;
+}
+.copyright img {
+  margin-top: 33px;
+}
+.copyright p {
+  margin-top: 25px;
+ font-size: 12px;
+ line-height: 18px;
+ color: #666;
+}
+.copyright a {
+  display: inline-block;
+  width: 120px;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #00a4ff;
+  /* 行内元素无法设置margin-top，需要转换行内块元素 */
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #00a4ff;
+}
+.links {
+  float: right;
+  margin-top: 33px;
+  margin-right: 30px;
+}
+.links dl {
+  float: left;
+  margin-left: 140px;
+  color: #333;
+}
+.links dl dt {
+  margin-bottom: 10px;
+  font-size: 16px;
+  /* color: #333; */
+}
+.links dl dd {
+  font-size: 14px;
+}
